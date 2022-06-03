@@ -123,9 +123,64 @@ main {
   background-color: #F7F7F7;
 }
 
-svg {
+header svg,
+nav svg {
   fill: whitesmoke;
 }
+
+#alert {
+  background-color: #7577BF;
+}
+
+.traffic-nav {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  padding-left: 0px;
+}
+
+.traffic-section,
+.daily-traffic-section,
+.mobile-users-section,
+.social-stats-section,
+.members-section,
+.activity-section,
+.message-section {
+  border-bottom: 1px solid lightgray;
+}
+
+.social-stats-section svg {
+  fill: #7577BF
+}
+
+.section-title {
+  font-weight: 300;
+}
+
+.members-list {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+.members-list li:not(:last-child) {
+  border-bottom: 1px solid lightgray;
+}
+
+.members {
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
