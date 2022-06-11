@@ -304,10 +304,68 @@ fieldset {
 
 /* MESSAGING WIDGET SECTION STYLES */
 
+.form-field,
+.form-area,
+.button-primary,
+.option-field {
+  width: 100%;
+  font-weight: 300;
+  border: 2px solid #DBDBDB;
+  border-radius: 5px;
+}
+
+.form-field,
+.form-area,
+.option-field {
+  background-color: #F5F5F5;
+  margin-bottom: 12px;
+  padding-left: 10px;
+}
+
+.form-field,
+.button-primary,
+.option-field {
+  height: 45px;
+}
+
+.form-area {
+  height: 140px;
+  padding-top: 10px;
+}
+
+.button-primary {
+  background-color: #7577BF;
+  color: whitesmoke;
+}
+
 /* LOCAL SETTINGS SECTION STYLES */
 
 .settings-section {
   padding: 15px;
+}
+
+.settings-send-button,
+.button-disabled {
+  height: 45px;
+  width: 48%;
+  font-weight: 300;
+  background-color: #7577BF;
+  color: whitesmoke;
+  border: 2px solid #DBDBDB;
+  border-radius: 5px;
+}
+
+.settings-button {
+  display: flex;
+  justify-content: space-between;
+}
+
+.settings-send-button {}
+
+.button-disabled {}
+
+.switch-buttons {
+  width: 100px;
 }
 
 
