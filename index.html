@@ -146,7 +146,7 @@
 
           <fieldset class="toggle-switches">
             <legend><span class="hide-legend">Time Period</span></legend>
-            <div class="switch-toggle switch-ios toggle">
+            <div class="switch-toggle switch-ios toggle" id="green-switches">
               <input id="hourly" name="view" type="radio" checked />
               <label class="switch-label" for="hourly" onclick="">Hourly</label>
 
@@ -157,7 +157,11 @@
               <label class="switch-label" for="weekly" onclick="">Weekly</label>
 
               <input id="monthly" name="view" type="radio" />
-              <label class="switch-label" for="monthly" onclick=""
+              <label
+                class="switch-label"
+                id="monthly-label"
+                for="monthly"
+                onclick=""
                 >Monthly</label
               >
               <a> </a>
