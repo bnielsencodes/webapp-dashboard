@@ -241,10 +241,16 @@ fieldset {
 
 /* NEW MEMBERS AND RECENT ACTIVITY SECTIONS STYLES */
 
+#members-section,
+#activity-section {
+  padding-bottom: 0px;
+}
+
 .members-list,
 .activity-list {
   list-style-type: none;
   padding-left: 0px;
+  margin-bottom: 0px;
 }
 
 .members-list li:not(:last-child),
@@ -269,23 +275,31 @@ fieldset {
   font-weight: 300;
 }
 
-.member-name,
-.post-date {
-  margin: 0px;
-}
-
-.member-email {
-  text-decoration: none;
-}
-
 .profile-image {
   width: 60px;
   height: 60px;
   border-radius: 50%;
 }
 
+.member-name {
+  margin: 0px;
+}
+
+.member-email {
+  text-decoration: none;
+  color: #7577BF;
+}
+
+.post-text {
+  margin: 3px 0px;
+}
+
 .post-text span {
   font-weight: 400;
+}
+
+.post-date {
+  margin: 0px 0px 15px;
 }
 
 /* MESSAGING WIDGET SECTION STYLES */
