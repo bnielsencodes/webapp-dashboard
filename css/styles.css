@@ -13,130 +13,13 @@
     "header"
     "nav"
     "main";
-  font-family: 'PT Sans',
+  font-family: 'Merriweather Sans',
     sans-serif;
-}
-
-#home,
-#bar-chart,
-#members,
-#settings,
-.social-image {
-  display: block;
-  width: 35px;
-  height: 35px;
-}
-
-header {
-  grid-area: header;
-  width: 100%;
-  min-height: 50px;
-  background-color: #7577BF;
-  color: whitesmoke;
-}
-
-.header-list-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  list-style-type: none;
-  margin: 0px auto;
-  padding: 0px;
-}
-
-.header-list-first {
-  margin-right: auto;
-}
-
-.header-title {
-  font-size: 1.1rem;
-}
-
-.app-span,
-.trade-span {
-  font-weight: 300;
-}
-
-.main-nav {
-  grid-area: nav;
-  background-color: #4D4C71;
-}
-
-main {
-  display: grid;
-  grid-area: main;
-}
-
-.mock-graphs {
-  width: 200px;
 }
 
 .widget-container-full,
 .widget-container-half {
   width: 95vw;
-}
-
-.bell-container {
-  display: flex;
-  align-items: center;
-  width: 35px;
-  height: 35px;
-  border-right: 1px solid lightgrey;
-}
-
-#bell {
-  width: 25px;
-  height: 25px;
-}
-
-.profile-avatar {
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-}
-
-.student-name {
-  font-weight: 300;
-}
-
-.nav-list {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  list-style-type: none;
-  padding-left: 0px;
-}
-
-.dashboard-header {
-  display: flex;
-}
-
-.dashboard-headline {
-  padding: 0px 12px 0px 12px;
-  font-weight: 300;
-}
-
-.grey-tab {
-  flex: 1;
-  border-bottom: 1px solid lightgrey;
-  border-left: 1px solid lightgrey;
-  background-color: #F7F7F7;
-}
-
-header svg,
-nav svg {
-  fill: whitesmoke;
-}
-
-#alert {
-  background-color: #7577BF;
-}
-
-.traffic-nav {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-around;
-  padding-left: 0px;
 }
 
 .traffic-section,
@@ -147,42 +30,271 @@ nav svg {
 .activity-section,
 .message-section {
   border-bottom: 1px solid lightgray;
-}
-
-.social-stats-section svg {
-  fill: #7577BF
+  padding: 15px;
 }
 
 .section-title {
+  margin: 2px 0 1rem;
+}
+
+svg {
+  fill: whitesmoke;
+}
+
+.widget-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main {
+  display: grid;
+  grid-area: main;
+}
+
+.graph-container {
+  text-align: center;
+}
+
+.mock-graphs {
+  width: 100%;
+}
+
+/* HEADER STYLES */
+
+header {
+  grid-area: header;
+  width: 100%;
+  background-color: #7577BF;
+  color: whitesmoke;
+}
+
+.header-list-container {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  margin: 0px auto;
+  padding: 6px 10px;
+}
+
+.header-list-first {
+  margin-right: auto;
+}
+
+.header-title {
+  font-size: 1.2rem;
+}
+
+.header-middles {
+  padding-right: 10px;
+}
+
+.app-span {
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+.bell-container {
+  display: flex;
+  align-items: center;
+  width: 30px;
+  height: 34px;
+  border-right: 1px solid lightgrey;
+}
+
+#bell {
+  width: 20px;
+  height: 20px;
+}
+
+.header-avatar {
+  display: flex;
+  align-items: center;
+}
+
+.profile-avatar {
+  width: 34px;
+  border-radius: 50%;
+}
+
+.student-name {
+  font-weight: 300;
+  font-size: 0.75rem;
+}
+
+/* MAIN NAV STYLES */
+
+.main-nav {
+  grid-area: nav;
+  background-color: #4D4C71;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+  padding: 0px 20px;
+  margin: 0.75rem 0rem;
+}
+
+#home,
+#bar-chart,
+#members,
+#settings,
+.social-image {
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
+/* DASHBOARD HEADER STYLES */
+
+.dashboard-header {
+  display: flex;
+}
+
+.dashboard-headline {
+  padding: 0px 12px 0px 12px;
+}
+
+.grey-tab {
+  flex: 1;
+  border-bottom: 1px solid lightgrey;
+  border-left: 1px solid lightgrey;
+  background-color: #F7F7F7;
+}
+
+/* ALERT SYTLES */
+
+#alert {
+  background-color: #7577BF;
+}
+
+/* TRAFFIC SECTION STYLES */
+
+fieldset {
+  padding: 0px;
+  border: none;
+  margin: 0px 0px 20px;
   font-weight: 300;
 }
 
-.members-list {
+.hide-legend {
+  position: absolute;
+  left: -9999px;
+  width: 100px;
+  height: auto;
+  overflow: hidden;
+}
+
+.switch-label {
+  font-size: 0.89rem;
+}
+
+/* DAILY TRAFFIC SECTION STYLES */
+
+/* MOBILE USERS SECTION STYLES */
+
+/* SOCIAL STATS SECTION STYLES */
+
+.social-container {
+  display: flex;
+  align-items: center;
+  background-color: #F5F5F5;
+  border: 1px solid #CCCCCC;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+
+.social-svg-container {
+  width: 60px;
+  height: 60px;
+  background-color: #7577BF;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.social-svgs {
+  width: 30px;
+  height: 30px;
+}
+
+.social-title {
+  color: #7577BF;
+  margin: 18px 0px 0px;
+}
+
+.social-number {
+  font-family: 'Martel Sans',
+    sans-serif;
+  font-size: 2.5rem;
+  font-weight: 200;
+  color: #777777;
+  margin: 0px 0px 11px;
+
+}
+
+/* NEW MEMBERS AND RECENT ACTIVITY SECTIONS STYLES */
+
+.members-list,
+.activity-list {
   list-style-type: none;
   padding-left: 0px;
 }
 
-.members-list li:not(:last-child) {
+.members-list li:not(:last-child),
+.activity-list li:not(:last-child) {
   border-bottom: 1px solid lightgray;
 }
 
-.members {
+.members-list li:not(:first-child),
+.activity-list li:not(:first-child) {
+  padding-top: 15px;
+}
+
+.members,
+.activity {
   text-align: center;
 }
 
+.member-name,
+.member-email,
+.post-text,
+.post-date {
+  font-weight: 300;
+}
 
+.member-name,
+.post-date {
+  margin: 0px;
+}
 
+.member-email {
+  text-decoration: none;
+}
 
+.profile-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
 
+.post-text span {
+  font-weight: 400;
+}
 
+/* MESSAGING WIDGET SECTION STYLES */
 
+/* LOCAL SETTINGS SECTION STYLES */
 
-
-
-
-
-
-
+.settings-section {
+  padding: 15px;
+}
 
 
 
