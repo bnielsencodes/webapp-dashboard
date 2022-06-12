@@ -440,6 +440,7 @@ fieldset {
 
   .daily-traffic-section {
     grid-column: 1 / 2;
+    border-right: 1px solid lightgray;
   }
 
   .mobile-users-section {
@@ -554,9 +555,75 @@ fieldset {
     display: block;
     margin-left: auto;
     font-weight: 300;
+    font-size: 1.4rem;
   }
 
   .switch-containers {
     width: 45%;
+  }
+}
+
+
+
+@media (min-width: 1024px) {
+  .dashboard-header {
+    grid-column: 1 / 3;
+  }
+
+  .daily-traffic-section,
+  .members-section,
+  .message-section {
+    grid-column: 1 / 2;
+  }
+
+  .mobile-users-section,
+  .activity-section,
+  .settings-section {
+    grid-column: 2 / 3;
+  }
+
+  .members-section,
+  .message-section {
+    border-right: 1px solid lightgray;
+  }
+
+  .profile-avatar {
+    width: 38px;
+  }
+
+  .student-name {
+    font-size: 0.85rem;
+  }
+
+  .social-container {
+    width: 32%;
+  }
+
+  .members-list li:not(:first-child) {
+    padding-top: 0px;
+  }
+
+  .activity-list li:first-child {
+    padding-top: 15px;
+  }
+
+  .pic-name-email {
+    margin-top: 15px;
+  }
+
+  .arrow {
+    font-size: 1rem;
+  }
+
+  .form-area {
+    height: 144px;
+  }
+
+  .settings-p {
+    margin-top: 11px;
+  }
+
+  .switch-containers {
+    width: 67%;
   }
 }
