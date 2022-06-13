@@ -2,7 +2,9 @@ const alertBanner = document.getElementById("alert");
 const trafficCanvas = document.getElementById("traffic-chart");
 const dailyCanvas = document.getElementById("daily-chart");
 const mobileCanvas = document.getElementById("mobile-chart");
-
+const user = document.getElementById("user-field");
+const message = document.getElementById("message-field");
+const send = document.getElementById("send-button");
 
 /* ------------- ALERT ---------------*/
 // create the html for the banner
@@ -142,3 +144,19 @@ let mobileChart = new Chart(mobileCanvas, {
 });
 
 /* ------------- MESSAGING ---------------*/
+
+// check if user and message fields are empty
+send.addEventListener('click', () => {
+  // ensure user and message fields are filled out
+  if (user.value === "" && message.value === "") {
+    alert("Please fill out user and message fields before sending");
+  } else if (user.value === "") {
+    alert("Please fill out user field before sending");
+  } else if (message.value === "") {
+    alert("Please fill out message field before sending");
+  } else {
+    alert(`Message successfully sent to: ${user.value}`);
+  }
+});
+
+// 
