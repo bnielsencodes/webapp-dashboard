@@ -5,19 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebApp Dashboard</title>
 
-    <!-- MAIN STYLESHEET -->
+    <!-- ------------ MAIN STYLESHEET ------------ -->
     <link rel="stylesheet" href="css/styles.css" />
 
-    <!-- NORMALIZE CSS -->
+    <!-- ------------ NORMALIZE CSS ------------ -->
     <link rel="stylesheet" href="css/normalize.css" />
 
-    <!-- CSS TOGGLE SWITCH STYLESHEET -->
+    <!-- ------------ CSS TOGGLE SWITCH STYLESHEET ------------ -->
     <link
       rel="stylesheet"
       href="css/css-toggle-switch-master/dist/toggle-switch.css"
     />
 
-    <!-- GOOGLE FONTS -->
+    <!-- ------------ GOOGLE FONTS ------------ -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,11 +25,12 @@
       rel="stylesheet"
     />
 
+    <!-- ------------ CHART.JS ------------ -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
 
   <body class="grid-container">
-    <!-- HEADER -->
+    <!-- ------------ HEADER ------------ -->
     <header>
       <ul class="header-list-container">
         <li class="header-list-first">
@@ -40,7 +41,7 @@
         <li class="header-middles">
           <div class="bell-container">
             <div class="notifications">
-              <!-- notifications code needed -->
+              <!-- ------------ notifications code needed ------------ -->
             </div>
             <svg
               id="bell"
@@ -66,7 +67,7 @@
       </ul>
     </header>
 
-    <!-- NAVBAR -->
+    <!-- ------------ NAVBAR ------------ -->
     <nav class="main-nav">
       <ul class="nav-list">
         <li class="nav-list-items">
@@ -130,18 +131,18 @@
       </ul>
     </nav>
 
-    <!-- MAIN CONTENT -->
+    <!-- ------------ MAIN CONTENT ------------ -->
     <main id="main-grid">
-      <!-- DASHBOARD HEADER -->
+      <!-- ------------ DASHBOARD HEADER ------------ -->
       <div class="dashboard-header">
         <h2 class="dashboard-headline">Dashboard</h2>
         <div class="grey-tab"></div>
       </div>
 
-      <!-- ALERT BANNER -->
+      <!-- ------------ ALERT BANNER ------------ -->
       <div id="alert"></div>
 
-      <!-- TRAFFIC SECTION -->
+      <!-- ------------ TRAFFIC SECTION ------------ -->
       <section class="traffic-section">
         <div class="traffic-header">
           <h3 class="section-title">Traffic</h3>
@@ -171,40 +172,40 @@
           </fieldset>
         </div>
         <div class="graph-container">
-          <!-- LINE CHART -->
+          <!-- ------------ LINE CHART ------------ -->
           <div class="widget-container-full">
             <canvas id="traffic-chart"></canvas>
           </div>
         </div>
       </section>
 
-      <!-- DAILY TRAFFIC SECTION -->
+      <!-- ------------ DAILY TRAFFIC SECTION ------------ -->
       <section class="daily-traffic-section">
         <h3 class="section-title">Daily Traffic</h3>
         <div class="graph-container">
-          <!-- BAR CHART -->
+          <!-- ------------ BAR CHART ------------ -->
           <div class="widget-container-half">
             <canvas id="daily-chart"></canvas>
           </div>
         </div>
       </section>
 
-      <!-- MOBILE USERS SECTION -->
+      <!-- ------------ MOBILE USERS SECTION ------------ -->
       <section class="mobile-users-section">
         <h3 class="section-title">Mobile Users</h3>
         <div class="graph-container">
-          <!-- DONUT CHART -->
+          <!-- ------------ DONUT CHART ------------ -->
           <div class="widget-container-half">
             <canvas id="mobile-chart"></canvas>
           </div>
         </div>
       </section>
 
-      <!-- SOCIAL STATS SECTION -->
+      <!-- ------------ SOCIAL STATS SECTION ------------ -->
       <section class="social-stats-section">
         <h3 class="section-title">Social Stats</h3>
         <div class="social-stats-container">
-          <!-- FACEBOOK -->
+          <!-- ------------ FACEBOOK ------------ -->
           <div class="social-container">
             <div class="social-svg-container">
               <svg
@@ -226,7 +227,7 @@
               </div>
             </div>
           </div>
-          <!-- INSTAGRAM -->
+          <!-- ------------ INSTAGRAM ------------ -->
           <div class="social-container">
             <div class="social-svg-container">
               <svg
@@ -248,7 +249,7 @@
               </div>
             </div>
           </div>
-          <!-- TWITTER -->
+          <!-- ------------ TWITTER ------------ -->
           <div class="social-container">
             <div class="social-svg-container">
               <svg
@@ -273,10 +274,10 @@
         </div>
       </section>
 
-      <!-- NEW MEMBERS SECTION -->
+      <!-- ------------ NEW MEMBERS SECTION ------------ -->
       <section class="members-section" id="members-section">
         <h3 class="section-title">New Members</h3>
-        <!-- NEW MEMBER 1 -->
+        <!-- ------------ NEW MEMBER 1 ------------ -->
         <ul class="members-list">
           <li class="members">
             <div class="pic-name-email">
@@ -292,7 +293,7 @@
             </div>
             <p class="post-date">10/15/15</p>
           </li>
-          <!-- NEW MEMBER 2 -->
+          <!-- ------------ NEW MEMBER 2 ------------ -->
           <li class="members">
             <div class="pic-name-email">
               <img src="images/member-2.jpg" class="profile-image" />
@@ -305,7 +306,7 @@
             </div>
             <p class="post-date">10/15/15</p>
           </li>
-          <!-- NEW MEMBER 3 -->
+          <!-- ------------ NEW MEMBER 3 ------------ -->
           <li class="members">
             <div class="pic-name-email">
               <img src="images/member-3.jpg" class="profile-image" />
@@ -318,7 +319,7 @@
             </div>
             <p class="post-date">10/15/15</p>
           </li>
-          <!-- NEW MEMBER 4 -->
+          <!-- ------------ NEW MEMBER 4 ------------ -->
           <li class="members">
             <div class="pic-name-email">
               <img src="images/member-4.jpg" class="profile-image" />
@@ -334,11 +335,11 @@
         </ul>
       </section>
 
-      <!-- RECENT ACTIVITY SECTION -->
+      <!-- ------------ RECENT ACTIVITY SECTION ------------ -->
       <section class="activity-section" id="activity-section">
         <h3 class="section-title">Recent Activity</h3>
         <ul class="activity-list">
-          <!-- RECENT ACTIVITY 1 -->
+          <!-- ------------ RECENT ACTIVITY 1 ------------ -->
           <li class="activity">
             <img src="images/member-1.jpg" class="profile-image" />
             <div class="post-text-container">
@@ -353,7 +354,7 @@
             </div>
             <div class="arrow">></div>
           </li>
-          <!-- RECENT ACTIVITY 2 -->
+          <!-- ------------ RECENT ACTIVITY 2 ------------ -->
           <li class="activity">
             <img src="images/member-2.jpg" class="profile-image" />
             <div class="post-text-container">
@@ -369,7 +370,7 @@
             </div>
             <div class="arrow">></div>
           </li>
-          <!-- RECENT ACTIVITY 3 -->
+          <!-- ------------ RECENT ACTIVITY 3 ------------ -->
           <li class="activity">
             <img src="images/member-3.jpg" class="profile-image" />
             <div class="post-text-container">
@@ -385,7 +386,7 @@
             </div>
             <div class="arrow">></div>
           </li>
-          <!-- RECENT ACTIVITY 4 -->
+          <!-- ------------ RECENT ACTIVITY 4 ------------ -->
           <li class="activity">
             <img src="images/member-4.jpg" class="profile-image" />
             <div class="post-text-container">
@@ -403,7 +404,7 @@
         </ul>
       </section>
 
-      <!-- MESSAGING WIDGET SECTION -->
+      <!-- ------------ MESSAGING WIDGET SECTION ------------ -->
       <section class="message-section">
         <h3 class="section-title">Message User</h3>
         <form class="widget-container">
@@ -424,10 +425,10 @@
         </form>
       </section>
 
-      <!-- LOCAL SETTINGS WIDGET -->
+      <!-- ------------ LOCAL SETTINGS WIDGET ------------ -->
       <section class="settings-section">
         <h3 class="section-title">Settings</h3>
-        <!-- custom CSS toggle code-->
+        <!-- ------------ custom CSS toggle code ------------ -->
         <div class="switch-containers switch-container-one">
           <p class="settings-p">Send Email Notifications</p>
           <label class="switch-light switch-ios switch-buttons" onclick="">
@@ -439,7 +440,7 @@
             </span>
           </label>
         </div>
-        <!-- custom CSS toggle code-->
+        <!-- ------------ custom CSS toggle code ------------ -->
         <div class="switch-containers">
           <p class="settings-p">Send Profile to Public</p>
           <label class="switch-light switch-ios switch-buttons" onclick="">
@@ -545,7 +546,7 @@
       </section>
     </main>
 
-    <!-- JAVASCRIPT -->
+    <!-- ------------ JAVASCRIPT ------------ -->
     <script src="js/script.js"></script>
   </body>
 </html>
