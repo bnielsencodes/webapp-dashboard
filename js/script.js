@@ -27,14 +27,53 @@ alertBanner.addEventListener('click', e => {
 });
 
 /* ------------- TRAFFIC LINE CHART ---------------*/
-// trraffic chart data
-let trafficData = {
+// hourly traffic chart data
+let hourlyTrafficData = {
   labels: ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3",
     "4-10", "11-17", "18-24", "25-31"
   ],
   datasets: [{
     data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500,
       2500
+    ],
+    backgroundColor: 'rgba(116, 119, 191, .3)',
+    borderWidth: 1,
+  }]
+};
+// daily traffic chart data
+let dailyTrafficData = {
+  labels: ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3",
+    "4-10", "11-17", "18-24", "25-31"
+  ],
+  datasets: [{
+    data: [1400, 900, 1200, 1450, 2190, 340, 560, 1370, 2120, 1500,
+      230
+    ],
+    backgroundColor: 'rgba(116, 119, 191, .3)',
+    borderWidth: 1,
+  }]
+};
+// weekly traffic chart data
+let weeklyTrafficData = {
+  labels: ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3",
+    "4-10", "11-17", "18-24", "25-31"
+  ],
+  datasets: [{
+    data: [840, 1170, 340, 1800, 670, 420, 2220, 1340, 2210, 700,
+      310
+    ],
+    backgroundColor: 'rgba(116, 119, 191, .3)',
+    borderWidth: 1,
+  }]
+};
+// monthly traffic chart data
+let monthlyTrafficData = {
+  labels: ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3",
+    "4-10", "11-17", "18-24", "25-31"
+  ],
+  datasets: [{
+    data: [2100, 2400, 290, 430, 1800, 1900, 380, 1925, 2300, 260,
+      1650
     ],
     backgroundColor: 'rgba(116, 119, 191, .3)',
     borderWidth: 1,
@@ -64,7 +103,7 @@ let trafficOptions = {
 // create traffic chart
 let trafficChart = new Chart(trafficCanvas, {
   type: 'line',
-  data: trafficData,
+  data: monthlyTrafficData,
   options: trafficOptions,
 });
 

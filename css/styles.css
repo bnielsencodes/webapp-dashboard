@@ -22,12 +22,6 @@
   width: 90vw;
 }
 
-/* #traffic-chart,
-#daily-chart,
-#mobile-chart {
-  width: 100%;
-} */
-
 .traffic-section,
 .daily-traffic-section,
 .mobile-users-section,
@@ -189,7 +183,7 @@ header {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin: 0 0 0 6px;
+  margin-left: 1px;
 }
 
 .alert-p {
@@ -234,7 +228,7 @@ fieldset {
 }
 
 #traffic-chart {
-  margin-left: 1.5rem;
+  margin-left: 1.25rem;
 }
 
 /* ------------ SOCIAL STATS SECTION STYLES ------------ */
@@ -422,22 +416,6 @@ fieldset {
   margin: 10px 0px 0px;
 }
 
-.option-container {
-  position: relative;
-}
-
-.option-container:after {
-  width: 1px;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  border-top: 6px solid #7577BF;
-  position: absolute;
-  top: 33%;
-  right: 3px;
-  content: "";
-  z-index: 99;
-}
-
 #cancel {
   background-color: #999999;
 }
@@ -521,6 +499,10 @@ fieldset {
     font-size: 1.2rem;
     font-weight: 300;
     padding: 0px 15px;
+  }
+
+  .alert-banner {
+    margin-left: 6px;
   }
 
   .section-title {
