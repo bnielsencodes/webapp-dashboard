@@ -18,6 +18,7 @@ const weeklyTrafficData = [840, 1170, 340, 1800, 670, 420, 2220, 1340, 2210, 700
 const monthlyTrafficData = [2100, 2400, 290, 430, 1800, 1900, 380, 1925, 2300, 260,
   1650
 ];
+const names = [];
 
 /* ------------- ALERT ---------------*/
 // create the html for the banner
@@ -85,6 +86,8 @@ let trafficChart = new Chart(trafficCanvas, {
   },
   options: trafficOptions,
 });
+
+helpers.retinaScale(this.chart);
 
 // function to update chart data
 function updateData(trafficChart, data) {

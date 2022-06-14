@@ -407,14 +407,15 @@
       <!-- ------------ MESSAGING WIDGET SECTION ------------ -->
       <section class="message-section">
         <h3 class="section-title">Message User</h3>
-        <form class="widget-container">
-          <input
-            type="text"
-            placeholder="Search for user"
-            class="form-field"
-            id="user-field"
-          />
-
+        <form class="widget-container" autocomplete="off" action="">
+          <div class="autocomplete">
+            <input
+              type="text"
+              placeholder="Search for user"
+              class="form-field"
+              id="user-field"
+            />
+          </div>
           <textarea
             placeholder="Message for user"
             class="form-area"

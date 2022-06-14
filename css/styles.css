@@ -342,6 +342,12 @@ fieldset {
 
 /* ------------ MESSAGING WIDGET SECTION STYLES ------------ */
 
+.autocomplete {
+  width: 100%;
+  height: 45px;
+  margin-bottom: 12px;
+}
+
 .form-field,
 .form-area,
 .button-primary,
