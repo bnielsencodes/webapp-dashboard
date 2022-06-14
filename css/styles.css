@@ -19,8 +19,14 @@
 
 .widget-container-full,
 .widget-container-half {
-  width: 95vw;
+  width: 90vw;
 }
+
+/* #traffic-chart,
+#daily-chart,
+#mobile-chart {
+  width: 100%;
+} */
 
 .traffic-section,
 .daily-traffic-section,
@@ -227,7 +233,10 @@ fieldset {
   font-size: 0.89rem;
 }
 
-#traffic
+#traffic-chart {
+  margin-left: 1.5rem;
+}
+
 /* ------------ SOCIAL STATS SECTION STYLES ------------ */
 
 .social-container {
@@ -525,6 +534,10 @@ fieldset {
     justify-content: space-between;
   }
 
+  #traffic-chart {
+    margin-left: 2.5rem;
+  }
+
   #monthly-label {
     padding-right: 50px;
   }
@@ -625,6 +638,10 @@ fieldset {
 
   .student-name {
     font-size: 0.85rem;
+  }
+
+  #traffic-chart {
+    margin-left: 4.25rem;
   }
 
   .social-container {
