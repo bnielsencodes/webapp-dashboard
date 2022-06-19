@@ -6,6 +6,9 @@ const user = document.getElementById("user-field");
 const message = document.getElementById("message-field");
 const send = document.getElementById("send-button");
 const toggleData = document.querySelector(".toggle");
+const bell = document.querySelector(".bell-container");
+const notification = document.getElementById("notifications");
+const dropdown = document.querySelector(".notifications-dropdown");
 const hourlyTrafficData = [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500,
   2500
 ];
@@ -18,7 +21,7 @@ const weeklyTrafficData = [840, 1170, 340, 1800, 670, 420, 2220, 1340, 2210, 700
 const monthlyTrafficData = [2100, 2400, 290, 430, 1800, 1900, 380, 1925, 2300, 260,
   1650
 ];
-const names = ["Aaron", "Aaron-James", "Aarron", "Abdallah", "Abdul", "Abel", "Abu", "Adam", "Abraham", "Alex", "Aaron", "Ben", "Carl", "Dan", "David", "Edward", "Fred", "Frank", "George", "Hal", "Hank", "Ike", "John", "Jack", "Joe", "Larry", "Monte", "Matthew", "Mark", "Nathan", "Otto", "Paul", "Peter", "Roger", "Roger", "Steve", "Thomas", "Tim", "Ty", "Victor", "Walter"];
+const names = ["Aaron", "Aaron-James", "Aarron", "Abdallah", "Abdul", "Abel", "Abu", "Adam", "Abraham", "Alex", "Aaron", "Ben", "Carl", "Dale", "Dan", "David", "Dawn", "Edward", "Fred", "Frank", "George", "Hal", "Hank", "Ike", "John", "Jack", "Joe", "Larry", "Monte", "Matthew", "Mark", "Nathan", "Otto", "Paul", "Peter", "Roger", "Roger", "Steve", "Thomas", "Tim", "Ty", "Victor", "Victoria", "Walter"];
 
 /* ------------- ALERT ---------------*/
 // create the html for the banner
@@ -26,7 +29,7 @@ alertBanner.innerHTML =
   `
   <div class="alert-banner">
     <div class="alert-p-container">
-      <p class="alert-p"><strong class="alert-strong">Alert:</strong> You have undread messages</p>
+      <p class="alert-p"><strong class="alert-strong">Alert:</strong> You have unread messages</p>
       <p class="alert-banner-close">x</p>
     </div>
   </div>
@@ -112,7 +115,7 @@ toggleData.addEventListener("click", (e) => {
 
 // daily traffic bar chart data
 const dailyData = {
-  labels: ["S", "M", "T", "W", "T", "F", "S"],
+  labels: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
   datasets: [{
     label: '# of Hits',
     data: [75, 115, 175, 125, 225, 200, 100],
@@ -305,3 +308,11 @@ function autocomplete(inp, arr) {
 
 // Initiate the Autocomplete Effect on "#user-field"
 autocomplete(document.getElementById("user-field"), names);
+
+/* ------------- NOTIFICATIONS ---------------*/
+
+bell.addEventListener("click", () => {
+  dropdown.classList.toggle("show");
+  notification.classList.toggle("hidden");
+  bell.classList.toggle("bell-padding-top");
+});
