@@ -699,11 +699,11 @@ fieldset {
     align-items: flex-start;
   }
 
-  .arrow {
+  .fa-angle-right {
     display: block;
-    margin-left: auto;
-    font-weight: 300;
+    margin: 0 8px 0 auto;
     font-size: 1.4rem;
+    color: #7477bf;
   }
 
   .switch-containers {
@@ -765,10 +765,6 @@ fieldset {
 
   .pic-name-email {
     margin-top: 15px;
-  }
-
-  .arrow {
-    font-size: 1rem;
   }
 
   .form-area {
