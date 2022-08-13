@@ -315,4 +315,12 @@ bell.addEventListener("click", () => {
   dropdown.classList.toggle("show");
   notification.classList.toggle("hidden");
   bell.classList.toggle("bell-padding-top");
-});
+
+
+// Add local date and set local date format for new members
+
+let date = new Date();
+let localDate = date.toLocaleDateString();
+let dateElement = document.querySelectorAll('.date-time');
+
+document.querySelectorAll('.date-time').innerHTML = localDate;
