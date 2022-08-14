@@ -12,14 +12,14 @@ const dropdown = document.querySelector(".notifications-dropdown");
 const hourlyTrafficData = [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500,
   2500
 ];
-const dailyTrafficData = [1400, 900, 1200, 1450, 2190, 340, 560, 1370, 2120, 1500,
-  230
+const dailyTrafficData = [900, 1200, 1100, 1450, 2190, 1800, 1950, 2079, 2120, 1700,
+  1850
 ];
-const weeklyTrafficData = [840, 1170, 340, 1800, 670, 420, 2220, 1340, 2210, 700,
-  310
+const weeklyTrafficData = [840, 1170, 1400, 1800, 1300, 1600, 2220, 1340, 2210, 2100,
+  2200
 ];
-const monthlyTrafficData = [2100, 2400, 290, 430, 1800, 1900, 380, 1925, 2300, 260,
-  1650
+const monthlyTrafficData = [2100, 2400, 2500, 2700, 2500, 2900, 2970, 3100, 3170, 3300,
+  3100
 ];
 const names = ["Aaron", "Aaron-James", "Aarron", "Abdallah", "Abdul", "Abel", "Abu", "Adam", "Abraham", "Alex", "Aaron", "Ben", "Carl", "Dale", "Dan", "David", "Dawn", "Edward", "Fred", "Frank", "George", "Hal", "Hank", "Ike", "John", "Jack", "Joe", "Larry", "Monte", "Matthew", "Mark", "Nathan", "Otto", "Paul", "Peter", "Roger", "Roger", "Steve", "Thomas", "Tim", "Ty", "Victor", "Victoria", "Walter"];
 
