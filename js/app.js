@@ -23,7 +23,20 @@ const monthlyTrafficData = [2100, 2400, 290, 430, 1800, 1900, 380, 1925, 2300, 2
 ];
 const names = ["Aaron", "Aaron-James", "Aarron", "Abdallah", "Abdul", "Abel", "Abu", "Adam", "Abraham", "Alex", "Aaron", "Ben", "Carl", "Dale", "Dan", "David", "Dawn", "Edward", "Fred", "Frank", "George", "Hal", "Hank", "Ike", "John", "Jack", "Joe", "Larry", "Monte", "Matthew", "Mark", "Nathan", "Otto", "Paul", "Peter", "Roger", "Roger", "Steve", "Thomas", "Tim", "Ty", "Victor", "Victoria", "Walter"];
 
-/* ------------- ALERT ---------------*/
+
+/* *****************************************
+NOTIFICATIONS
+***************************************** */
+bell.addEventListener("click", () => {
+  dropdown.classList.toggle("show");
+  notification.classList.toggle("hidden");
+  bell.classList.toggle("bell-padding-top");
+});
+
+
+/* *****************************************
+ALERT
+***************************************** */
 // create the html for the banner
 alertBanner.innerHTML =
   `
@@ -43,7 +56,10 @@ alertBanner.addEventListener('click', e => {
   }
 });
 
-/* ------------- TRAFFIC LINE CHART ---------------*/
+
+/* *****************************************
+TRAFFIC LINE CHART
+***************************************** */
 // traffic chart options
 let trafficOptions = {
   backgroundColor: 'rgba(112, 104, 201, .5)',
@@ -111,8 +127,10 @@ toggleData.addEventListener("click", (e) => {
   }
 });
 
-/* ------------- DAILY TRAFFIC BAR CHART ---------------*/
 
+/* *****************************************
+DAILY TRAFFIC BAR CHART
+***************************************** */
 // daily traffic bar chart data
 const dailyData = {
   labels: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
@@ -145,10 +163,11 @@ let dailyChart = new Chart(dailyCanvas, {
   options: dailyOptions
 });
 
-/* ------------- MOBILE USERS DONUT CHART ---------------*/
 
+/* *****************************************
+MOBILE USERS DONUT CHART
+***************************************** */
 // mobile users donut chart data
-
 const mobileData = {
   labels: ["Desktop", "Tablet", "Phones"],
   datasets: [{
@@ -164,7 +183,6 @@ const mobileData = {
 };
 
 // mobile users donut chart options
-
 const mobileOptions = {
   aspectRatio: 1.9,
   plugins: {
@@ -179,15 +197,26 @@ const mobileOptions = {
 };
 
 // create mobile users donut chart
-
 let mobileChart = new Chart(mobileCanvas, {
   type: 'doughnut',
   data: mobileData,
   options: mobileOptions
 });
 
-/* ------------- MESSAGING ---------------*/
 
+/* *****************************************
+ADD LOCAL DATE AND SET LOCAL DATE FORMAT FOR NEW MEMBERS
+***************************************** */
+let date = new Date();
+let localDate = date.toLocaleDateString();
+let dateElement = document.querySelectorAll('.date-time');
+
+document.querySelectorAll('.date-time').innerHTML = localDate;
+
+
+/* *****************************************
+MESSAGING
+***************************************** */
 // check if user and message fields are empty
 send.addEventListener('click', () => {
   // ensure user and message fields are filled out
@@ -202,8 +231,10 @@ send.addEventListener('click', () => {
   }
 });
 
-/* ------------- AUTOCOMPLETE FOR USER SEARCH INPUT ---------------*/
 
+/* *****************************************
+AUTOCOMPLETE FOR USER SEARCH INPUT
+***************************************** */
 function autocomplete(inp, arr) {
   /*the autocomplete function takes two arguments,
   the text field element and an array of possible autocompleted values:*/
@@ -308,19 +339,3 @@ function autocomplete(inp, arr) {
 
 // Initiate the Autocomplete Effect on "#user-field"
 autocomplete(document.getElementById("user-field"), names);
-
-/* ------------- NOTIFICATIONS ---------------*/
-
-bell.addEventListener("click", () => {
-  dropdown.classList.toggle("show");
-  notification.classList.toggle("hidden");
-  bell.classList.toggle("bell-padding-top");
-
-
-// Add local date and set local date format for new members
-
-let date = new Date();
-let localDate = date.toLocaleDateString();
-let dateElement = document.querySelectorAll('.date-time');
-
-document.querySelectorAll('.date-time').innerHTML = localDate;
